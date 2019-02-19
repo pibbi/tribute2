@@ -101,7 +101,6 @@ p {
                       "head head head"
                       "col1 col1 col1"
                       "col1 col1 col1"
-                      "col1 col1 col1"
                       "col2 col3 col4"
                       "col2 col3 col4"
                       "col2 col3 col4"
@@ -115,7 +114,7 @@ p {
   grid-area: col1;
   background-color: white;
   color: #1e90cc;
-  margin-top: 0em;
+  grid-template-rows: 50px;
 }
 .three {
   grid-area: col2;
