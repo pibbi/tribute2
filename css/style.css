@@ -1,0 +1,153 @@
+body {
+  padding: 0 1em 1em 1em;
+  margin: .2em;
+  font-family: 'Lato', 'Arial', sans-serif;
+  color: #000;
+  background-color: #FFF;
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul {
+  list-style: none;
+  padding: 1em;
+  background-color: #1e90cc;
+  border-radius: 1em;
+}
+nav a:link, nav a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: #FFF;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #FFF;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  padding-top: .7em;
+  padding-left: .9em;
+  color: #1e90cc;
+}
+
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin-top: .67em;
+  margin-bottom: .67em;
+}
+p {
+  font-size: 1em;
+  margin-top: .67em;
+  margin-bottom: .67em;
+}
+/*-- ----------------
+- START GRID STYLES -
+--------------------*/
+.grid-container {
+  padding: .2em;
+/*-- enables grid layout--*/
+  display: grid;
+  grid-gap: .2em .2em;
+  grid-template-columns: repeat(3, 1fr);
+}
+/*-- Old Layout Method
+.grid-item {
+  display: inline-block;
+  width: 31.5%;
+  margin-right: 1em;
+}--*/
+.grid-item {
+  padding: .1em;
+}
+
+.grid-container {
+  grid-template-areas:
+                      "head head head"
+                      "col1 col1 col1"
+                      "col1 col1 col1"
+                      "col1 col1 col1"
+                      "col2 col3 col4"
+                      "col2 col3 col4"
+                      "col2 col3 col4"
+}
+.one {
+  grid-area: head;
+  background-color: white;
+  margin: 0em;
+}
+.two {
+  grid-area: col1;
+  background-color: white;
+  color: #1e90cc;
+  margin-top: 0em;
+  border-radius: 1em;
+}
+.three {
+  grid-area: col2;
+  background-image: linear-gradient(white, #1e90cc);
+  color: #0a3246;
+  margin: .5em;
+  border-radius: 1em;
+  padding: 10px;
+
+}
+.four {
+  grid-area: col3;
+  margin: .5em;
+  color: #0038A8;
+  border-radius: 1em;
+  padding: 10px;
+
+}
+.five {
+  grid-area: col4;
+  margin: .5em;
+  color: #0a3246;
+  border-radius: 1em;
+  padding: 10px;
+  background-image: linear-gradient(white, #1e90cc);
+}
+@media (max-width: 640px) {
+  .grid-container {
+    display: block;
+  }
+  .one img {
+    float: left;
+  }
+}
+.pic1{
+  width: 30%
+}
+.video{
+  height: 600%;
+  Width: 200%;
+  align-content: center;
+}
+.stoolpic{
+  margin-top: 6em;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video iframe, .videos object, .video embed {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+}
